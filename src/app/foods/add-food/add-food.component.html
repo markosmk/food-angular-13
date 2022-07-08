@@ -1,0 +1,10 @@
+<h2>Agregar Comidas: {{ new.name }}</h2>
+
+<form (ngSubmit)="addFood()">
+  <input type="text" placeholder="name" [(ngModel)]="new.name" name="name" />
+  <!-- <input type="text" placeholder="name" [ngModel]="new.name" /> -->
+  <!-- <input type="text" placeholder="name" [input]="updateName($event)" /> -->
+
+  <input type="text" placeholder="kilos" [(ngModel)]="new.kc" name="kc" />
+  <button type="submit">Guardar</button>
+</form>
