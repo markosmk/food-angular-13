@@ -1,0 +1,8 @@
+<h2>Lista de comidas vegetarianas</h2>
+
+<ul>
+  <li *ngFor="let item of vegetarianFoods">
+    {{ item.name }} - {{ item.kc | number }}kc
+    <!-- <button (click)="removeItem()">Delete</button> -->
+  </li>
+</ul>
