@@ -1,0 +1,85 @@
+<h2 class="text-3xl font-semibold mb-4">Recipes</h2>
+<ul class="mb-4">
+  <li class="font-semibold text-xl">Diets</li>
+  <ul class="ml-6 list-disc">
+    <li>Gluten Free</li>
+    <li>Ketogenic</li>
+    <li>Vegetarian</li>
+    <li>Lacto-Vegetarian</li>
+    <li>Ovo-Vegetarian</li>
+    <li>Vegan</li>
+    <li>Pescetarian</li>
+    <li>Paleo</li>
+    <li>Primal</li>
+    <li>Low FODMAP</li>
+    <li>Whole30</li>
+  </ul>
+  <li class="font-semibold text-xl">Type of recipe</li>
+  <ul class="ml-6 list-disc">
+    <li>main course</li>
+    <li>side dish</li>
+    <li>dessert</li>
+    <li>appetizer</li>
+    <li>salad</li>
+    <li>bread</li>
+    <li>breakfast</li>
+    <li>soup</li>
+    <li>beverage</li>
+    <li>sauce</li>
+    <li>marinade</li>
+    <li>fingerfood</li>
+    <li>snack</li>
+    <li>drink</li>
+  </ul>
+  <li class="font-semibold text-xl">Intolerances</li>
+  <ul class="ml-6 list-disc">
+    <li>Dairy</li>
+    <li>Egg</li>
+    <li>Gluten</li>
+    <li>Grain</li>
+    <li>Peanut</li>
+    <li>Seafood</li>
+    <li>Sesame</li>
+    <li>Shellfish</li>
+    <li>Soy</li>
+    <li>Sulfite</li>
+    <li>Tree Nut</li>
+    <li>Wheat</li>
+  </ul>
+  <li class="font-semibold text-xl">Cuisines</li>
+  <ul class="ml-6 list-disc">
+    <li>African</li>
+    <li>American</li>
+    <li>British</li>
+    <li>Cajun</li>
+    <li>Caribbean</li>
+    <li>Chinese</li>
+    <li>Eastern European</li>
+    <li>European</li>
+    <li>French</li>
+    <li>German</li>
+    <li>Greek</li>
+    <li>Indian</li>
+    <li>Irish</li>
+    <li>Italian</li>
+    <li>Japanese</li>
+    <li>Jewish</li>
+    <li>Korean</li>
+    <li>Latin American</li>
+    <li>Mediterranean</li>
+    <li>Mexican</li>
+    <li>Middle Eastern</li>
+    <li>Nordic</li>
+    <li>Southern</li>
+    <li>Spanish</li>
+    <li>Thai</li>
+    <li>Vietnamese</li>
+  </ul>
+</ul>
+
+<h2 class="text-3xl font-semibold mb-4">History</h2>
+<ul>
+  <li *ngFor="let item of history">
+    <a href="#" (click)="search(item)">{{ item | titlecase }}</a>
+  </li>
+</ul>
